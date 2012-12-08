@@ -61,7 +61,7 @@ module QueueWho
 
     def shutdown
       puts "Shuting down"
-      @processing = true
+      @processing = false
     end
   end
 end
