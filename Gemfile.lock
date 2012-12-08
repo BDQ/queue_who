@@ -34,6 +34,12 @@ GEM
     bson_ext (1.8.0)
       bson (~> 1.8.0)
     builder (3.0.4)
+    capistrano (2.13.5)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -54,6 +60,7 @@ GEM
       multi_json (~> 1.0)
     foreman (0.60.2)
       thor (>= 0.13.6)
+    highline (1.6.15)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -75,6 +82,13 @@ GEM
       activesupport (~> 3.0)
       plucky (~> 0.5.2)
     multi_json (1.4.0)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.6.1)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
     plucky (0.5.2)
       mongo (~> 1.5)
     polyglot (0.3.3)
@@ -135,6 +149,7 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext
+  capistrano
   coffee-rails (~> 3.2.1)
   debugger
   foreman

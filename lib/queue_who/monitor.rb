@@ -36,7 +36,7 @@ module QueueWho
 
           # check in error count is increasing
           #
-          if ln['error_rate_increase'].nil? || ln['error_rate_increase']['failing'] < last_report.failing
+          if last_report && (ln['error_rate_increase'].nil? || ln['error_rate_increase']['failing'] < last_report.failing)
             puts "error_rate_increase"
 
             if ln['error_rate_increase']['notified_at'] < (Time.now.utc - 1.minute)
